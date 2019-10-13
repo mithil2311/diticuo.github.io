@@ -14,15 +14,36 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-134757493-1');
-  </script>
-<!-- Viewport for Responsive -->
+  </script>   
+<!-- 	Favicon -->
+	 <!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!--  favicon end-->
+	<!-- Viewport for Responsive -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
   crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-
+   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -34,7 +55,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <!--   metadata for color   -->
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#000000" /> 
+	
+	<style>
+.small_sponsor {
+  height: 200px;
+  width:300px;
+}
+@media(max-width: 768px){
+  .small_sponsor {
+    width: 100%;
+  }
+}
+	</style>
+	
   </head>
 <body>
   
@@ -82,70 +116,84 @@ window.onload = function() {
       <div class="particle particle-3"></div>
       <div class="particle particle-4"></div>
     </div>
-    <div class="fullscreen-bg">
+        
+
+	  <div class="fullscreen-bg">
       <div class="d-none d-md-block">
-        <video loop muted autoplay poster="img/image-bg.jpg" class="fullscreen-bg__video">
-         
+        <video loop muted autoplay poster="img/image-bg.png" class="fullscreen-bg__video">
+          <source src="video/video-bg.mp4" type="video/mp4">
           </video>
         </div>
         <div class="d-block d-md-none">
-          <video loop muted autoplay poster="img/image-bg.jpg" class="fullscreen-bg__video">
-            
-
-
+          <video loop muted autoplay poster="img/image-mbg.jpg" class="fullscreen-bg__video">
+            <source src="video/video-mbg.mp4" type="video/mp4">
             </video>
           </div>
         </div>
-        <!-- Sponsors-->
 
-        <div class="animatedParent" >
-          <div class="modal animated zoomIn"  id="sponsorsModal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;">
-              <div class="modal-dialog modal-full" role="document">
-                  <div class="modal-content about">
-                    <div class="container-fluid">
-                      <div class="row py-5">
-                        <div class="col-5 offset-1 mobile_back pt-1">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <img  src="img/back.svg" class="about_back">
-                          </button>
-                        </div>
-                        <div class="col-2">
-                          <p>&nbsp;</p>
-                        </div>
-                        <div class="col-4 text-center pt-2">
-                          <img style="height: 70px; width= 300px;" src="img/optimalogo.png" class="white_logo">
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="container-fluid text-center align-items-center offset-md-1">
-                      <div class="row">
-                        <div class="col-md-7 offset-md-1">
-                            <h4 class="font_bold text-center"> Our Sponsors</h4>
-                            <hr width="30%" style="border-bottom: 2px solid #fff;">
-
-                            <h1 class="front_blod text-center">
-                              Coming Soon!!
-                            </h1> 
-                         
-                          
-                          
-                          
-
-                        </div>
-                      </div>
-                    </div>
-    
-    
-    
+ <!-- Sponsors-->
+       <div class="animatedParent" >
+        <div class="modal animated zoomIn"  id="sponsorsModal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;">
+          <div class="modal-dialog modal-full" role="document">
+            <div class="modal-content team">
+              <div class="container-fluid">
+                <div class="row py-5">
+                  <div class="col-5 offset-1 mobile_back pt-1">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <img src="img/sponsor-back.svg" class="about_back">
+                    </button>
+                  </div>
+                  <div class="col-2">
+                    <p>&nbsp;</p>
+                  </div>
+                  <div class="col-4 text-center pt-1">
+                    <img src="img/optimalogo.png" class="white_logo">
                   </div>
                 </div>
               </div>
+              <div class="container-fluid">
+                <h4 class="font_bold text-center">Our Sponsors</h4>
+                        <hr width="5%" style="border-bottom: 2px solid #fff;"> 
+                         <br>  
+                         <br>
+                <div class="row">
+                  <div class="col-md-3 col-6 text-center pt-1">
+                    <img src="img/sponsons/codechef.png" class="small_sponsor img-fluid">
+                    
+                  </div>
+                  <div class="col-md-3 col-6 text-center pt-1">
+                    <img src="img/sponsons/coding_blocks.png" class="small_sponsor img-fluid">
+                    
+                  </div>
+                  <div class="col-md-3 col-6 text-center pt-1">
+                    <img src="img/sponsons/codingninjas.svg" class="small_sponsor img-fluid">
+                   
+                  </div>
+                  <div class="col-md-3 col-6 text-center pt-1">
+                    <img src="img/sponsons/hackerearth.jpeg" class="small_sponsor img-fauld">
+                    
+                  </div>
+                </div>
+                <br class=""> <br class="">
+                <div class="row">
+                  <div class="col-md-3 col-6 text-center pt-1">
+                    <img src="img/sponsons/skillenza.png" class="small_sponsor">
+                    
+               
+                  </div>
+                
+                 
+                 
+                </div>
+               
+              
+                
+              </div>
+            </div>
           </div>
-        </div> 
-
-        <!--End SPonsors-->
-
+        </div>
+      </div>
+      <!--End SPonsors-->
         
         <!-- events -->
         <div class="animatedParent">
@@ -185,7 +233,7 @@ window.onload = function() {
                                 <div class="overlay rounded" style="border-style: solid; border-width: 1px;">
                                   <img src="img/workshop_icon.svg" width="100%" class="new">
                                   <div class="middle">
-                                    <a href="commingsoon.html" style=" text-decoration: none; color: #fff;"  class="font_bold" >
+                                    <a href="workshop.html" style=" text-decoration: none; color: #fff;"  class="font_bold" >
                                      <img src="img/workshop_icon.svg" width="50px"> 
                                     </a>
                                   </div>
@@ -261,7 +309,7 @@ window.onload = function() {
                           <div class="overlay" style="border-style: solid; border-width: 1px;">
                             <img src="img/web.svg" width="100%" class="new">
                             <div class="middle">
-				     <a href="commingsoon.html" style=" text-decoration: none; color: #fff;"  class="font_bold" >
+				     <a href="webdesigning.html" style=" text-decoration: none; color: #fff;"  class="font_bold" >
                                 <img src="img/web.svg" width="50px">
                               </a>
                             </div>
@@ -311,7 +359,7 @@ window.onload = function() {
                           <div class="overlay" style="border-style: solid; border-width: 1px;">
                             <img src="img/tech_debate.svg" width="100%" class="new">
                             <div class="middle">
-			        <a href="commingsoon.html" style=" text-decoration: none; color: #fff;"  class="font_bold" >
+			        <a href="techdebate.html" style=" text-decoration: none; color: #fff;"  class="font_bold" >
                                 <img src="img/tech_debate.svg" width="50px">
                               </a>
                             </div>
@@ -329,7 +377,7 @@ window.onload = function() {
                           <div class="overlay" style="border-style: solid; border-width: 1px;">
                             <img src="img/gaming.svg" width="100%" class="new">
                             <div class="middle">
-				 <a href="commingsoon.html" style=" text-decoration: none; color: #fff;"  class="font_bold" >
+				 <a href="gaming.html" style=" text-decoration: none; color: #fff;"  class="font_bold" >
                                 <img src="img/gaming.svg" width="50px">
                             </div>
                           </div>
@@ -630,17 +678,14 @@ window.onload = function() {
                       <div class="col-md-7 offset-md-1">
                           <h4 class="font_bold text-center">OPTIMA</h4>
                           <hr width="10%" style="border-bottom: 2px solid #fff;">
-                        <p class="about_text font_light text-center">Optima, India’s largest annual techno-management symposium of NIT Tiruchirappalli,
-                           celebrates 12 glorious years of its making. Since its inception in 2007, Optima has been providing a national platform 
-                           to youth for showcasing their talent. It has organized a plethora of events for its participants, spanning through genres
-                            encompassing the fields of technology and management, to compete in.This time stepping into the twelfth year, Optima is 
-                            going to be a two days symposium comprising of workshop and hacakthon.
+                        <p class="about_text font_light text-center">Optima is an annual techno-management 
+				symposium orgainised by The Department of Computer Applications, NIT Tiruchirappalli, This year Optima celebrates 12th glorious years of its making. Since its inception in 2007 plethora of events are organized every year which provides a platform for the youths to showcase their talent and skills, Optima orchestrates a two day technically vibrant and innovative fest spanning through various genres encompassing cutting edge technology and management. Optima attracts 400+ students from more than 35 colleges across the country. The students get an opportunity to learn and compete against the best minds in technology among student community.
                         </p>
                         <h4 class="font_bold text-center">THEME</h4>
                           <hr width="10%" style="border-bottom: 2px solid #fff;">
                         
-                        <p class="about_text font_light text-center">Computer science plays an important role in space technology,  The  natural tendency and curiosity of the human brain to explore, to discover and reveal the mysteries of this universe. India space program started with a modest beginning in the 1960s , It has grown steadily, achieving significant milestones. These include fabrication of satellites, space-launch vehicles, and a range of associated capabilities With growing confidence, ISRO has also started to undertake more ambitious space science and exploration missions. The most notable of these have been the Chandrayaan and the Mangalyaan missions. Recently India has taken its space expedition to a whole new level with chandrayaan 2. 
-Through this years theme , Optima aims to create awareness about India's potential and stake in global space economy with a emphasis on importance of computer science in space technology, Join us in exploring these horizons and celebrating it Welcome to Optima'19.
+                        <p class="about_text font_light text-center">Cyber-Physical Systems (CPS) are transforming the way humans interact with engineered systems, just as the internet has transformed the way people interact with information.The term CPS was coined by Helen Gill in 2006 but the roots of the CPS are older and deeper, so is the evolution. It involves transdisciplinary approaches, merging theory of cybernetics, mechatronics, design and process science. The process is is often referred to as embedded systems with emphasis on the computational elements,In simple terms CPS are integrations of computation, networking, and physical processes, with feedback loops where physical processes affect computations and vice versa.The economic and societal potential of such systems is vastly greater than what has been realized. Implementaion of CPS include smart grid, autonomous automobile systems, medical monitoring, process control systems, robotics systems, and automatic pilot avionics.Through this years theme, Optima aims to create awareness about evolution,applications and unrealised potential of Cyber-Physical Systems,
+				Join us to explore, learn and celebrate.Welcome to Optima'19.
                           </p>
                       </div>
                     </div>
@@ -708,6 +753,99 @@ Through this years theme , Optima aims to create awareness about India's potenti
             </div>
           </div> 
           <!--Reach End-->
+
+
+
+
+<!-- registration modal -->
+        <div class="animatedParent">
+            <div class="modal animated zoomIn"  id="rmodal" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: black;">
+              <div class="modal-dialog modal-full" role="document">
+                <div class="modal-content team">
+                  <div class="container-fluid">
+                    <div class="row pt-5">
+                      <div class="col-5 offset-1 mobile_back pt-1">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <img src="img/back.svg" class="about_back">
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <p>&nbsp;</p>
+                      </div>
+                      <div class="col-4 text-center pt-1">
+                        <img src="img/optimalogo.png" class="white_logo">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid pt-3">
+                    
+                        <h4 class="font_bold text-center">Registration Details</h4>
+                        <hr width="10%" style="border-bottom: 2px solid #fff;">
+                        <div class="row">
+                          <div class="col-md-7 offset-md-2">
+                              <h3 style="color: yellow ; text-align: left;">Description</h3>
+                            <p class="" style=" text-align: left; color:white;"> Optima’19 is a two day event to be held on 19th and 20th October, 2019 at National Institute of
+                              Technology, Tiruchirappalli. We have a total of seven events namely HACKATHON, CODING &
+                              DEBUGGING, WEB-DESIGNING, BUZZER QUIZ, TECHNICAL DEBATE, GAMING and
+                              TREASURE HUNT. We are also conducting a whole day hands on workshop on Artificial
+                              Intelligence on 20th October
+                            </p> 
+                            <h4 class="font_bold " style="text-align: left; color: yellow ;">GENERAL RULES:</h4>
+                            <ul class="">
+                              <li class="text-left">Each participants can register in a maximum of two events. Select events as per the
+                                timings. Your choice of events should not clash</li>
+                                <li class="text-left">To Register to an event participants have to register through our official website
+                                  optima.nitt.edu</li>
+                                  <li class="text-left">Participants should register for events separately</li>
+                                  <li class="text-left">Participants will be provided food and accomodation at NIT Trichy campus</li>
+                                  <li class="text-left">Participants can report to NIT Trichy from 6:00 pm onwards on 18-10-2019.
+                                  </li>
+                                  <li class="text-left">All the participants must report before 8:00 am on 19-10-2019.</li>
+                                  <li class="text-left">Participants attending workshop must bring their own laptop.</li>
+                                  <li class="text-left">We are providing accommodation for the participants. If parents are coming with
+                                    participants they will have to arrange their own accommodation outside NIT Trichy.</li>
+                                    <li class="text-left">All participants must carry formals as per the NIT Trichy guidelines</li>
+                                    <li class="text-left">Participants are supposed to maintain proper discipline inside NIT Trichy campus.</li>
+                            </ul> 
+      
+                            <h4 class="font_bold " style="text-align: left; color: yellow ;">REGISTRATION FEE:</h4>
+                            <ul class="">
+                              <li class="text-left">Participants are supposed to pay registration amount of Rupees 350.
+                              </li>
+                                <li class="text-left">Registration fee includes accommodation and food charges</li>
+                                  <li class="text-left">No additional fees will be charged for participating in workshops and events</li>
+                                  <li class="text-left">Participants will be provided food and accomodation at NIT Trichy campus</li>
+                                  <li class="text-left">Mode of payment will be conveyed to the participants through email
+                                  </li>
+                                  </ul>
+      
+                                  <h4 class="font_bold " style="text-align: left; color: yellow ;">REGISTER HERE:</h4>
+                                  <ul class="">
+                                    <li class="text-left">All participants must register to a common registration.
+                                    </li>
+			             <li class="text-left">Participants also need to register seperately for events under the event section.
+                                    </li>
+                                    </ul>
+<!-- 				Google form   -->
+		<div class="container-fluid">
+              <div class="row row-centered">      
+		      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeC3b-vJ4zC9Tdpf2d1xzzFyQVzAE5G9QFLFRvuA-QScu7lEg/viewform?embedded=true"
+		      width="640" height="1161" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              </div>
+              </div>
+		<!-- 	Google form end -->
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+
+         
+            </div>
+		
+	
+        <!-- end of registration-->
+
 
 
 
@@ -985,7 +1123,56 @@ Through this years theme , Optima aims to create awareness about India's potenti
                             </div>
                             <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Mantu Gupta</h5>
                             <p class="text-center font_light">Core Member</p>
+                          </div> 
+			    
+			    
+                          <div class="col-md-2 col-6 pt-2">
+                            <div class="">
+                              <img src="img/team/somya.jpeg" width="100%" class="rounded-circle new">
+                              <div class="middle">
+                                
+                              </div>
+                            </div>
+                            <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Somya</h5>
+                            <p class="text-center font_light">Core Member</p>
                           </div>
+
+
+                          <div class="col-md-2 col-6 pt-2 offset-md-2">
+                            <div class="">
+                              <img src="img/team/10.jpg" width="100%" class="rounded-circle new">
+                              <div class="middle">
+                                
+                              </div>
+                            </div>
+                            <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Priya Kumari</h5>
+                            <p class="text-center font_light">Core Member</p>
+                          </div>
+
+
+                         
+                          <div class="col-md-2 col-6 pt-2">
+                            <div class="">
+                              <img src="img/team/Tripty.jpg" width="100%" class="rounded-circle new">
+                              <div class="middle">
+                                
+                              </div>
+                            </div>
+                            <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Tripty Dubey</h5>
+                            <p class="text-center font_light">Core Member</p>
+                          </div>
+
+
+                          <div class="col-md-2 col-6 pt-2">
+                            <div class="">
+                              <img src="img/team/1.jpg" width="100%" class="rounded-circle new">
+                              <div class="middle">
+                                
+                              </div>
+                            </div>
+                            <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Mansi Awasthi</h5>
+                            <p class="text-center font_light">Core Member</p>
+                          </div> 
   
                           <div class="col-md-2 col-6 pt-2">
                               <div class="">
@@ -997,6 +1184,9 @@ Through this years theme , Optima aims to create awareness about India's potenti
                               <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Abhijeet Kumar</h5>
                               <p class="text-center font_light">Core Member</p>
                             </div>  
+                            
+  
+                         
                             
                            
                       
@@ -1056,7 +1246,7 @@ Through this years theme , Optima aims to create awareness about India's potenti
                                   
                                 </div>
                               </div>
-                              <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Sayana Sayu</h5>
+                              <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Sayana </h5>
                               <p class="text-center font_light">Core Member</p>
                             </div>
     
@@ -1131,7 +1321,7 @@ Through this years theme , Optima aims to create awareness about India's potenti
                                   
                                 </div>
                               </div>
-                              <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">priyadarshini karthikeyan</h5>
+                              <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Priyadarshini karthikeyan</h5>
                               <p class="text-center font_light">Event Head</p>
                             </div>
                             
@@ -1200,7 +1390,7 @@ Through this years theme , Optima aims to create awareness about India's potenti
                                 
                               </div>
                             </div>
-                            <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">utsa chattopadhyay</h5>
+                            <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Utsa Chattopadhyay</h5>
                             <p class="text-center font_light">Core Member</p>
                           </div>  
   
@@ -1224,7 +1414,7 @@ Through this years theme , Optima aims to create awareness about India's potenti
                                 
                               </div>
                             </div>
-                            <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">chirantan bhattacharya </h5>
+                            <h5 class="font_regular text-center pt-2 mb-0" style="font-size: 20px;">Chirantan Bhattacharya </h5>
                             <p class="text-center font_light">Core Member</p>
                           </div>    
   
@@ -1477,8 +1667,8 @@ Through this years theme , Optima aims to create awareness about India's potenti
               </div>
               <div class="d-block d-md-none">
                <div class="d-flex justify-content-center align-items-center c-1 ">
-                 <h6 class="font_bold">ANNUAL TECHNICAL SYMPOSIUM</h6>
-                 <p class="font_bold">NIT TRICHY</p>
+                 <h6 class="font_bold">ANNUAL TECHNO-SYMPOSIUM</h6>
+                 <p class="font_bold">NIT Trichy</p>
                </div>
              </div>
            </div>
@@ -1511,7 +1701,7 @@ Through this years theme , Optima aims to create awareness about India's potenti
                         <g id="holo">
                             <rect id="blank" class="cls-1" width="480" height="480"/>
                             <polygon id="hexagon" class="cls-2" points="207.5 221.03 207.5 257.98 239.5 276.45 271.5 257.98 271.5 221.03 239.5 202.55 207.5 221.03"/>
-                            <g id="register">
+                            <g id="register" data-target="#rmodal" data-toggle="modal">
                                 <title>Register</title>
                                 <path id="register0" class="cls-3" d="M272,432H208V368h64ZM153,471l90,9,88-10-12-38H160Z"/>
                                
@@ -1649,7 +1839,7 @@ Through this years theme , Optima aims to create awareness about India's potenti
                   <p style="margin-bottom: -8px; font-size: 24px;" class="font_bold">19TH-20TH</p>
                   <p style="font-size: 24px;" class="font_bold">OCTOBER</p>
                   <img src="img/line.svg" height="8%">
-                  <img src="img/fest-text.svg" height="35%">
+                  <img src="img/fest-text.svg" height="42%">
                   <img src="img/line.svg" height="8%">
                   <a style="font-size: 25px; margin-bottom: -8px; color: #fff;" data-toggle="modal" data-target="#MARCHANDISEmodal" class="font_bold" id="login">STORE</a>
               </div>
